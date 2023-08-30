@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages{
-        stage ("python version"){
+        stage ("python version1"){
             steps{
                 sh 'sudo apt update'
                 sh 'sudo apt upgarde -y'
