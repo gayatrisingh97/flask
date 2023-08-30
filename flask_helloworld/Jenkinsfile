@@ -1,14 +1,21 @@
 pipeline {
     agent any
-    stages {
+    stages{
+        stage ("python version"){
+            steps{
+                sh 'sudo apt-get update'
+                sh 'sudo apt-get upgarde -y'
+                sh 'sudo apt-get install python3'
+                sh 'python3 --version'
+            }
+        }
         stage ("Deploy"){
-            steps {
+            steps{
                 sh 'python3 app.py'
             }
         }
     }
 }
-
 
 
 
