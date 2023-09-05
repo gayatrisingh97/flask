@@ -3,9 +3,9 @@ pipeline {
     stages{
         stage ("python version1"){
             steps{
-                sh 'sudo apt update'
-                sh 'sudo apt upgarde -y'
-                sh 'sudo apt install python3'
+                sh 'apt update'
+                sh 'apt upgarde -y'
+                sh 'apt install python3'
                 sh 'python3 --version'
             }
         }
