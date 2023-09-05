@@ -3,6 +3,7 @@ pipeline {
     stages{
         stage ("python version1"){
             steps{
+                sh ' docker exec -it -u root f14bb bash'
                 sh 'apt update'
                 sh 'apt upgarde -y'
                 sh 'apt install python3'
